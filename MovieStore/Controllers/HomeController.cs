@@ -81,7 +81,7 @@ namespace MovieStore.Controllers
 
         public ActionResult Steg2()
         {
-            UPDATE Movies SET Price=169 WHERE ReleaseYear = 2014;
+            UPDATE Movies SET Price = 169 WHERE ReleaseYear = 2014;
 
 
             return View();
@@ -91,13 +91,22 @@ namespace MovieStore.Controllers
         public ActionResult Steg3()
         {
             USE MovieStoreConnection;
-            SELECT Firstname, Lastname , PhoneNo, EmailAdress FROM Customers;
+            SELECT Firstname, Lastname, PhoneNo, EmailAdress FROM Customers;
 
-            SELECT * FROM Movies ORDER BY ReleaseYear DESC
+            SELECT* FROM Movies ORDER BY ReleaseYear DESC;
 
-            SELECT Title,Price FROM Movies ORDER BY Price ASC
+            SELECT Title, Price FROM Movies ORDER BY Price ASC
 
-            SELECT Firstname, Lastname, DeliveryAdress, DeliveryZip, DeliveryCity FROM Customers WHERE 
+
+
+
+           SELECT Firstname, Lastname, DeliveryAdress, DeliveryZip, DeliveryCity FROM Customers, Orders INNER JOIN ON Customers.Id = Orders.CustomerId
+           INTERSECT
+           SELECT OrderId, MovieId ,Id ,CustomerId FROM OrderRows, Orders INNER JOIN ON  OrderRows.MovieId = 3 AND OrderRows.OrderId = Order.Id
+
+
+                SELECT Id, OrderDate, 
+
 
                 return View();
         }
