@@ -28,7 +28,6 @@ namespace MovieStore.Models
         public string BillingAdress { get; set; }
 
         [Required]
-        [MaxLength(5)]
         public int BillingZip { get; set; }
 
         [Required]
@@ -40,7 +39,6 @@ namespace MovieStore.Models
         public string DeliveryAdress { get; set; }
 
         [Required]
-        [MaxLength(5)]
         public int DeliveryZip { get; set; }
 
         [Required]
