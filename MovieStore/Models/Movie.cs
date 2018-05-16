@@ -21,7 +21,8 @@ namespace MovieStore.Models
         [MaxLength(30)]
         public string Director { get; set; }
         [Required]
-        public DateTime ReleaseYear { get; set; }
+        [MaxLength(4)]
+        public string ReleaseYear { get; set; }
         [Required]
         public decimal Price { get; set; }
 

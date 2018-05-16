@@ -25,7 +25,7 @@ namespace MovieStore.Models
 
         [Required]
         [MaxLength(40)]
-        public string BillingAdress { get; set; }
+        public string BillingAddress { get; set; }
 
         [Required]
         public int BillingZip { get; set; }
@@ -36,7 +36,7 @@ namespace MovieStore.Models
 
         [Required]
         [MaxLength(40)]
-        public string DeliveryAdress { get; set; }
+        public string DeliveryAddress { get; set; }
 
         [Required]
         public int DeliveryZip { get; set; }
@@ -46,7 +46,7 @@ namespace MovieStore.Models
         public string DeliveryCity { get; set; }
 
         [Required]
-        public string EmailAdress { get; set; }
+        public string EmailAddress { get; set; }
 
         [Required]
         [MaxLength(15)]

@@ -20,12 +20,10 @@ namespace MovieStore.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
-            context.Customers.AddOrUpdate(c => c.Model,
-                new Customer { Id=0,Firstname= }
+           
                 
                 
                 
-                );
         }
     }
 }

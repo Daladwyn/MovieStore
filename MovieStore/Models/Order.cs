@@ -18,7 +18,7 @@ namespace MovieStore.Models
         [Required]
         public DateTime OrderDate { get; set; }
         [Required]
-        public int CustomerId { get; set; }
+        public int Customerid { get; set; }
 
 
         List<OrderRow> OrderRows { get; set; }

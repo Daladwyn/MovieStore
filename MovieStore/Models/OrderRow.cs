@@ -15,9 +15,9 @@ namespace MovieStore.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public int OrderId { get; set; }
+        public int Orderid { get; set; }
         [Required]
-        public int MovieId { get; set; }
+        public int Movieid { get; set; }
         [Required]
         public decimal Price { get; set; }
 
