@@ -27,7 +27,7 @@ namespace MovieStore.Controllers
             return View();
         }
 
-        //public ActionResult Steg1()
+        //public ActionResult Steg1(INSERT)
         //{
 
         //SET IDENTITY_INSERT Customers ON
@@ -75,37 +75,35 @@ namespace MovieStore.Controllers
 
         //            return View();
         //}
-        //public ActionResult Steg2()
+        //public ActionResult Steg2(UPDATE)
         //{
-        //    UPDATE Movies SET Price = 169 WHERE ReleaseYear = 2014;
+        //UPDATE Movies SET Price = 169 WHERE ReleaseYear = 2014;
 
         //    return View();
         //}
-        // public ActionResult Steg3()
+        // public ActionResult Steg3(SELECT)
         //  {
-        //  SELECT Firstname, Lastname, PhoneNo, EmailAddress FROM Customers;
-
-        // SELECT* FROM Movies ORDER BY ReleaseYear DESC;
-
-        //    SELECT Title, Price FROM Movies ORDER BY Price ASC
-
+        //Partial Assignment A:
+        //SELECT Firstname, Lastname, PhoneNo, EmailAddress FROM Customers;
+        //Partial Assignment B:
+        //SELECT* FROM Movies ORDER BY ReleaseYear DESC;
+        //Partial Assignment C:
+        //SELECT Title, Price FROM Movies ORDER BY Price ASC
+        //Partial Assignment D:
         //SELECT Firstname, Lastname, DeliveryAddress, DeliveryZip, DeliveryCity FROM Customers JOIN Orders ON Customers.Id=Orders.Customerid JOIN OrderRows ON Orders.Id=OrderRows.Orderid WHERE OrderRows.Movieid=3
+        //Partial Assignment E:  
+        // SELECT  Orders.Id ,  Orders.OrderDate, Customers.Firstname, Customers.Lastname, SUM(OrderRows.Price) FROM Orders  JOIN Customers ON Orders.Customerid=Customers.Id JOIN OrderRows ON OrderRows.Orderid=Orders.Id GROUP BY Orders.Id, Orders.OrderDate, Customers.Firstname, Customers.Lastname
+         
+        //public ActionResult steg4(COPY)
+        //{
 
-        //Customerid, Datum för inköpen, för och efternamn samt totala kostnaden av varje order
+        //ALTER TABLE Customers ADD CellNo nvarChar(15)
+        
+        //UPDATE Customers SET CellNo=PhoneNo
 
+        //UPDATE Customers SET PhoneNo =' '
 
-        //            Partial Assignment E:
-        //                SELECT Id, Firstname, Lastname FROM Customers JOIN Orders ON Customers.Id=Orders.Customerid JOIN OrderRows ON Orders.Id=OrderRows.Orderid GROUP BY OrderRows.Orderid HAVING SUM (Price)
-
-        //SELECT SUM(OrderRows.Price) Firstname, Lastname FROM Customers JOIN Orders ON Customers.Id= Orders.Customerid JOIN OrderRows ON Orders.Id= OrderRows.Orderid GROUP BY Orders.Id HAVING SUM(OrderRows.Price)
-
-        //SELECT  SUM(OrderRows.Price) FROM OrderRows JOIN Orders ON OrderRows.Orderid= Orders.Id GROUP BY OrderRows.Orderid
-
-        //SELECT Customers.Id ,Customers.Firstname, Customers.Lastname , Orders.OrderDate, SUM(OrderRows.Price) FROM Customers JOIN Orders ON Customers.Id= Orders.Customerid JOIN OrderRows ON Orders.Id= OrderRows.Orderid
-   //     SELECT Customers.Id , Customers.Firstname, Customers.Lastname , Orders.OrderDate FROM Customers JOIN Orders ON Customers.Id= Orders.Customerid JOIN OrderRows ON Orders.Id= OrderRows.Orderid GROUP BY OrderRows.Orderid HAVING SUM(OrderRows.Price)
-
-
-
+        //}
 
     }
-        }
+}
