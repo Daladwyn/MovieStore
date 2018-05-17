@@ -51,11 +51,11 @@ namespace MovieStore.Controllers
 
         //SET IDENTITY_INSERT Orders ON
         //        INSERT INTO Orders(Id, OrderDate, Customerid)
-        //            VALUES(1, 2015 - 01 - 01, 1);
+        //            VALUES(1, '2015-01-01', 1);
         //INSERT INTO Orders(Id, OrderDate, Customerid)
-        //            VALUES(2, 2015 - 01 - 15, 2);
+        //            VALUES(2, '2015-01-15', 2);
         //INSERT INTO Orders(Id, OrderDate, Customerid)
-        //            VALUES(3, 2014 - 12 - 20, 1);
+        //            VALUES(3, '2014-12-20', 1);
         //SET IDENTITY_INSERT Orders OFF
 
 
@@ -93,12 +93,12 @@ namespace MovieStore.Controllers
         //SELECT Firstname, Lastname, DeliveryAddress, DeliveryZip, DeliveryCity FROM Customers JOIN Orders ON Customers.Id=Orders.Customerid JOIN OrderRows ON Orders.Id=OrderRows.Orderid WHERE OrderRows.Movieid=3
         //Partial Assignment E:  
         // SELECT  Orders.Id ,  Orders.OrderDate, Customers.Firstname, Customers.Lastname, SUM(OrderRows.Price) FROM Orders  JOIN Customers ON Orders.Customerid=Customers.Id JOIN OrderRows ON OrderRows.Orderid=Orders.Id GROUP BY Orders.Id, Orders.OrderDate, Customers.Firstname, Customers.Lastname
-         
+
         //public ActionResult steg4(COPY)
         //{
 
         //ALTER TABLE Customers ADD CellNo nvarChar(15)
-        
+
         //UPDATE Customers SET CellNo=PhoneNo
 
         //UPDATE Customers SET PhoneNo =' '
